@@ -1,6 +1,7 @@
 type Query {
   hello: String
-  getProduct: product
+  product(id: ID!): product
+  products: [product!]!
 }
 
 type product {
